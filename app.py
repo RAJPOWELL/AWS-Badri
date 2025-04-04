@@ -9,14 +9,12 @@ def home():
         email = request.form['email']
         message = request.form['message']
         language = request.form['language']
-        subscribe = 'subscribe' in request.form
         return render_template(
             'result.html',
             name=name,
             email=email,
             message=message,
-            language=language,
-            subscribe=subscribe
+            language=language
         )
     return render_template('form.html')
 
