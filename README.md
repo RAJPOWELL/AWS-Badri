@@ -17,7 +17,6 @@ This project demonstrates how to build and deploy a **simple web application** u
 
 ### ✨ Features
 
-- Responsive dark-themed form UI
 - User input handling via POST
 - Displays form data on a separate result page
 - Deployed live using EC2 public IP
