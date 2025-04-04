@@ -1,9 +1,39 @@
 <!doctype html>
-<html>
-  <body>
-    <h2>Here is what you submitted:</h2>
-    <p>Name: {{ name }}</p>
-    <p>Message: {{ message }}</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submission Result</title>
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .result-box {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+    a {
+      color: #03DAC5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="result-box">
+    <h2>Thank You!</h2>
+    <p><strong>Name:</strong> {{ name }}</p>
+    <p><strong>Email:</strong> {{ email }}</p>
+    <p><strong>Message:</strong> {{ message }}</p>
+    <p><strong>Language:</strong> {{ language }}</p>
+    <p><strong>Subscribed:</strong> {{ 'Yes' if subscribe else 'No' }}</p>
     <a href="/">Go back</a>
-  </body>
+  </div>
+</body>
 </html>

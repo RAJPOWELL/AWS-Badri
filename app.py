@@ -6,8 +6,18 @@ app = Flask(__name__)
 def home():
     if request.method == 'POST':
         name = request.form['name']
+        email = request.form['email']
         message = request.form['message']
-        return render_template('result.html', name=name, message=message)
+        language = request.form['language']
+        subscribe = 'subscribe' in request.form
+        return render_template(
+            'result.html',
+            name=name,
+            email=email,
+            message=message,
+            language=language,
+            subscribe=subscribe
+        )
     return render_template('form.html')
 
 if __name__ == '__main__':
