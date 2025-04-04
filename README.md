@@ -8,7 +8,7 @@ This project demonstrates how to build and deploy a **simple web application** u
 
 ### 🧰 Tech Stack
 
-- **Frontend**: HTML, CSS (Dark Theme)
+- **Frontend**: HTML, CSS
 - **Backend**: Python Flask
 - **Hosting**: AWS EC2 (Amazon Linux 2)
 - **Tools**: SSH, pip, yum
